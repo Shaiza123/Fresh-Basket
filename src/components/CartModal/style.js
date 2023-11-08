@@ -44,6 +44,7 @@ export default styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: RFPercentage(2),
         fontWeight: 'bold',
+        color:'#000'
     },
     quantityContainer: {
         flexDirection: 'row',
