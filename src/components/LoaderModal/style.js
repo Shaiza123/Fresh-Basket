@@ -35,6 +35,7 @@ export default styles = StyleSheet.create({
         fontSize: RFPercentage(2.5),
         fontWeight: 'bold',
         fontFamily: 'Poppins-Regular',
+        color:'#000'
     },
     lottie: {
         flex: 1,

@@ -26,19 +26,17 @@ const Cart = ({ navigation }) => {
 
 
   useEffect(() => {
-    let subtotal = 0;
-    cart?.cart?.forEach((item) => {
-      subtotal = item?.totalPrice + subtotal;
-    });
-
     if (cart?.cart?.length > 0) {
+      let subtotal = 0;
+      cart?.cart?.forEach((item) => {
+        subtotal = item?.totalPrice + subtotal;
+      });
+      setSubTotal(subtotal);
+      setTotal(subtotal + 32 + 18);
       setDeliveryFee(32);
       setTaxAndOther(18);
     }
-    const total = subtotal + deliveryFee + taxAndOther;
 
-    setSubTotal(subtotal);
-    setTotal(total);
   }, [cart?.cart]);
 
 

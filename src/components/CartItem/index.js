@@ -1,10 +1,11 @@
-import { View, Text, TouchableOpacity, TextInput } from 'react-native'
+import { View, Text, TouchableOpacity} from 'react-native'
 import React from 'react'
 import styles from '../CartItem/style';
 import MiniCard from '../MiniCard/index'
 import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { useDispatch } from 'react-redux'
 import { increment, decrement} from '../../redux/CartReducer';
+import { TextInput } from 'react-native-paper';
 
 
 const CartItem = (props) => {
@@ -31,8 +32,9 @@ const CartItem = (props) => {
                     <Text style={styles.textFont}>-</Text>
                 </TouchableOpacity>
                 <TextInput
-                    outlineColor='#63B23D'
                     editable={false}
+                    activeUnderlineColor='transparent'
+                    underlineColor="transparent"
                     style={styles.quantity}
                     value={props?.data?.quantity.toString()}
                 />

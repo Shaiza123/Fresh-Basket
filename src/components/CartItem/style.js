@@ -18,9 +18,10 @@ export default styles = StyleSheet.create({
       borderRadius: hp(50),
    },
    quantity:{
-      width: hp(2),
+      width: hp(4),
       height: hp(5),
       marginHorizontal: hp(1),
+      backgroundColor:"transparent"
    },
    textFont:{
       fontSize:RFPercentage(2)

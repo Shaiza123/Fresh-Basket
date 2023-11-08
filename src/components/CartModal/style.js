@@ -58,6 +58,7 @@ export default styles = StyleSheet.create({
         borderWidth: 1,
         marginHorizontal: hp(1),
         textAlign: 'center',
+        backgroundColor:'transparent',
     },
     button: {
         backgroundColor: '#4CAF50',
@@ -76,15 +77,16 @@ export default styles = StyleSheet.create({
     },
     addToCartButton: {
         backgroundColor: '#4CAF50',
-        paddingHorizontal: hp(10),
         paddingVertical: hp(1),
         borderRadius: hp(1),
         marginTop: hp(2),
+        width: '100%',
     },
     addToCartText: {
         color: 'white',
         fontWeight: 'bold',
         fontSize: RFPercentage(2),
+        alignSelf: 'center',
     },
   });
   

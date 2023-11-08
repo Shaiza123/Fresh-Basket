@@ -31,7 +31,7 @@ const Login = ({navigation}) => {
       <View style={styles.lineContainer}>
         <View style={styles.line}></View>
         <View>
-          <Text>OR</Text>
+          <Text style={{color:'#000'}}>OR</Text>
         </View>
         <View style={styles.line}></View>
       </View>

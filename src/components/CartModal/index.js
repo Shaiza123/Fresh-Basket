@@ -1,9 +1,10 @@
-import { View, Text, Button, TouchableOpacity, Image, TextInput } from 'react-native'
+import { View, Text, TouchableOpacity, Image} from 'react-native'
 import React, { useState } from 'react'
 import styles from '../CartModal/style';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useDispatch } from 'react-redux'
 import { updateCart } from '../../redux/CartReducer';
+import { TextInput } from 'react-native-paper';
 
 const CartModal = (props) => {
     const dispatch = useDispatch()
@@ -42,6 +43,7 @@ const CartModal = (props) => {
                     </TouchableOpacity>
                     <TextInput
                         style={styles.input}
+                        textColor='#000'
                         value={quantity.toString()}
                         onChangeText={(text) => setQuantity(parseInt(text) || 1)}
                     />
