@@ -24,7 +24,8 @@ export default styles = StyleSheet.create({
       backgroundColor:"transparent"
    },
    textFont:{
-      fontSize:RFPercentage(2)
+      fontSize:RFPercentage(2),
+      color:'#000'
    }
 
 });

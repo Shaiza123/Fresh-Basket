@@ -5,7 +5,7 @@ import TopHeader from '../../components/TopHeader/index'
 import { TextInput } from 'react-native-paper';
 import Feather from 'react-native-vector-icons/Feather'
 import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
-import { categories} from '../../utils/data'
+import { categories, categoryItems } from '../../utils/data'
 import ItemList from '../../components/ItemList/index'
 import ViewModal from '../../components/ViewModal/index';
 import { useSelector } from 'react-redux';
